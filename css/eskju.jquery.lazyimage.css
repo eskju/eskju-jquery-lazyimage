@@ -1,0 +1,84 @@
+
+	.esKju-lazyimage
+	{
+		background-image: url("../img/loading.gif");
+		background-repeat: no-repeat;
+		background-position: center center;
+	}
+	
+	.esKju-lazyimage img
+	{
+		opacity: 0;
+	}
+	
+	.esKju-lazyimage.esKju-lazyimage-loaded img
+	{
+		-webkit-transition: all 500ms ease-in-out;
+		-moz-transition: all 500ms ease-in-out;
+		-o-transition: all 500ms ease-in-out;
+		-ms-transition: all 500ms ease-in-out;
+		opacity: 1;
+		-webkit-filter: none;
+		-moz-filter: none;
+		-o-filter: none;
+		-ms-filter: none;
+		-webkit-transform: none;
+		-moz-transform: none;
+		-o-transform: none;
+		-ms-transform: none;
+	}
+	
+	.esKju-lazyimage-broken
+	{
+		-webkit-transition: all 250ms ease-in-out;
+		-moz-transition: all 250ms ease-in-out;
+		-o-transition: all 250ms ease-in-out;
+		-ms-transition: all 250ms ease-in-out;
+		background-image: url("../img/broken.png");
+		background-color: #eee;
+		-webkit-transform: none;
+		-moz-transform: none;
+		-o-transform: none;
+		-ms-transform: none;
+	}
+	
+	/**
+	 * 	filters
+	 */
+	
+	.esKju-lazyimage-filter-bloom img
+	{
+		-webkit-filter: brightness( 200% ) grayscale( 100% ) opacity( 0 );
+		-moz-filter: brightness( 200% ) grayscale( 100% ) opacity( 0 );
+		-o-filter: brightness( 200% ) grayscale( 100% ) opacity( 0 );
+		-ms-filter: brightness( 200% ) grayscale( 100% ) opacity( 0 );
+	}
+	
+	/**
+	 * 	animations
+	 */
+	
+	.esKju-lazyimage-translate img
+	{
+		-webkit-transform: translateY( 25px );
+		-moz-transform: translateY( 25px );
+		-o-transform: translateY( 25px );
+		-ms-transform: translateY( 25px );
+	}
+	
+	.esKju-lazyimage-zoom img
+	{
+		-webkit-transform: scale( 0.8 );
+		-moz-transform: scale( 0.8 );
+		-o-transform: scale( 0.8 );
+		-ms-transform: scale( 0.8 );
+	}
+	
+	.esKju-lazyimage-skew img
+	{
+		-webkit-transform: skewX( 5deg ) rotateY( 20deg ) rotateX( 10deg ) translateX( 25px ) scale( 0.8 );
+		-moz-transform: scale( 0.8 );
+		-o-transform: scale( 0.8 );
+		-ms-transform: scale( 0.8 );
+	}
+	

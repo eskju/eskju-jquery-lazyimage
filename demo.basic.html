@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  	<title>esKju's lazyImage jQuery Plugin Demo</title>
+  	<meta charset="utf-8">
+  	<meta http-equiv="content-language" content="de" />
+  	<meta name="robots" content="index,follow">
+  	<meta name="description" content="">
+  	<meta name="keywords" content="">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+  	
+  	<!-- facebook -->
+  	<meta name="og:title" content="esKju's lazyImage jQuery Plugin Demo" />
+  	<meta name="og:description" content="EsKju's LazyImage is a tool for fading images once loaded." />
+  	<meta name="og:image" content="http://www.cwdesigns.de/files/theme/img/lazyimage.png" />
+  	<meta name="og:url" content="http://www.cwdesigns.de/eskju-jquery-lazyimage.html" />
+  	
+  	<!-- fonts -->
+  	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Raleway:200,300,400,600" />
+  	
+  	<!-- demo content -->
+  	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="js/eskju.jquery.lazyimage.js"></script>
+	<link rel="stylesheet" href="css/eskju.jquery.lazyimage.css" />
+	
+	<!-- initialize plugin -->
+	<script type="text/javascript">
+	<!--
+	
+		$( document ).ready( function( )
+		{
+			$( ".esKju-lazyimage" ).LazyImage( );
+		});
+	
+	//-->
+	</script>
+</head>
+<body>
+	
+	<div id="example1">
+		<div class="esKju-lazyimage">
+			<!-- Pay attention to correct width and height definition -->
+			<img src="http://placekitten.com/g/300/200" width="300" height="200" alt="My Demo Image" />
+		</div>
+		
+		<div class="esKju-lazyimage">
+			<!-- Pay attention to correct width and height definition -->
+			<img src="http://www.somebrokenurl.com/myimage.jpg" width="300" height="200" alt="My Demo Image" />
+		</div>
+	</div>
+
+</body>
+</html>
